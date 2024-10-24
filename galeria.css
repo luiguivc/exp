@@ -1,0 +1,145 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Alfa Slab One", serif;
+    margin: 0;
+    padding: 0; 
+    color: black;
+}
+
+
+
+
+/* Header */
+header {
+    text-align: center;
+    padding: 30px;
+    color: white;
+    border-bottom: 1px solid #e0e0e0;
+    font-family: "Rammetto One", sans-serif;   
+    /*posicionamiento*/
+    position: sticky;
+    top: 2px;
+    z-index: 50;
+    background-color: BLUE;
+}
+    
+
+header h1 {
+    font-weight: 400;
+    font-family: "Rammetto One", sans-serif;
+    font-size: 60px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 10px;
+    
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 30px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.menu li a:hover {
+    color: red; /* Cambia a amarillo al pasar el cursor */
+    transition: all 400ms ease-in;
+}
+
+
+/* Estilos de la galería */
+.gallery {
+    text-align: center;
+    padding: 50px;
+    background-color: white;
+}
+
+.gallery h2 {
+    font-family: "Alfa Slab One", serif;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.grid-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 10px 4px 20px black
+}
+
+.grid-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover; /* Recorta la imagen si es necesario para ajustarse al contenedor */
+    transition: transform 0.3s ease;
+
+}
+
+.grid-item img:hover {
+    transform: scale(1.05);
+}
+
+.grid-item:nth-child(1) img{
+    filter: grayscale(80%); 
+}
+
+.grid-item:nth-child(2) img{
+    filter: sepia(50%); }
+
+.grid-item:nth-child(3) img{ 
+    filter: hue-rotate(180deg);
+}
+
+.grid-item:nth-child(5) img{
+    filter: hue-rotate(180deg);
+
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: black;
+    border-top: 1px solid #e0e0e0;
+    background-color: blue;
+}
+
+.redes {
+    display: flex; 
+    justify-content: center; 
+    list-style: none; 
+    padding: 30px; 
+    gap: 50px; 
+}
+
+.redes li i {
+    font-size: 35px; 
+    color: white; 
+    transition: color 0.3s; 
+}
+
+.redes li i:hover {
+    color: red; 
+}
